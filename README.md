@@ -44,7 +44,7 @@ O usuário possui uma lanterna acoplada à câmera:
 
 **Tecla F** → Liga/desliga a lanterna
 
-### 🎨 Controle de Cor da Lanterna
+### Controle de Cor da Lanterna
 
 A lanterna pode ter sua cor alterada dinamicamente:
 
@@ -93,5 +93,4 @@ A cena foi construída para destacar os seguintes fenômenos:
 * Visível principalmente no Path Tracing
 * Luz refletida herdando cor das superfícies
 
----
 
