@@ -94,17 +94,78 @@ A cena foi construída para destacar os seguintes fenômenos:
 * Luz refletida herdando cor das superfícies
 
 # Physically Based Rendering (PBR)
-Materiais Metálicos e Dielétricos
+## Materiais Metálicos e Dielétricos
 
 Foram utilizados materiais com diferentes propriedades físicas para demonstrar o fluxo Metallic Workflow.
 
-## Material Metálico
+### Material Metálico
 * Metallic = 1
 * Alto Smoothness
 * Reflexões intensas do ambiente
-## Material Dielétrico
+### Material Dielétrico
 * Metallic = 0
 * Reflexões menos intensas
 * Comportamento semelhante a materiais reais como plástico, madeira e vidro
 
+## Rugosidade (Roughness / Smoothness)
+* Baixa rugosidade → Reflexões nítidas
+* Alta rugosidade → Reflexões difusas
 
+## Efeito Fresnel
+O efeito Fresnel foi demonstrado através dos materiais reflexivos e transparentes.
+
+A intensidade da reflexão aumenta conforme o ângulo de visualização se aproxima das bordas do objeto, reproduzindo o comportamento observado em materiais reais.
+
+
+# HDR
+
+## HDRI Sky
+Foi utilizada uma imagem HDR para iluminação baseada em ambiente.
+
+Benefícios observados:
+* Reflexões mais realistas
+* Iluminação indireta natural
+* Melhor integração dos materiais com o ambiente
+
+## Exposure
+Foi implementado controle de exposição para demonstrar a influência da quantidade de luz capturada pela câmera virtual.
+
+Foram realizados testes com diferentes valores de EV (Exposure Value):
+
+* EV alto → imagem mais escura
+* EV médio → imagem balanceada
+* EV baixo → imagem mais clara
+
+## Tone Mapping
+
+Foi utilizado o operador ACES para conversão dos valores HDR para a faixa dinâmica suportada pelo monitor.
+
+Benefícios:
+* Preservação de detalhes em áreas muito iluminadas
+* Melhor reprodução de cores
+* Aparência mais cinematográfica
+
+# Efeitos de Pós-Processamento
+## Bloom
+
+Simula o espalhamento da luz em regiões de alta intensidade luminosa.
+
+Resultado observado:  Vazamento de luz em superfícies muito brilhantes.
+
+## SSAO (Screen Space Ambient Occlusion)
+
+Simula o bloqueio parcial da iluminação ambiente em regiões onde a luz indireta possui dificuldade de chegar.
+
+Resultado observado: Maior profundidade visual, Melhor definição de contato entre objetos e superfícies
+
+## Motion Blur
+
+Simula o borramento causado pelo movimento da câmera ou de objetos durante o tempo de exposição.
+
+Resultado observado: Movimento mais natural, Redução da aparência artificial durante deslocamentos rápidos
+
+## Chromatic Aberration
+
+Simula imperfeições ópticas presentes em lentes reais.
+
+Resultado observado: Pequena separação dos canais RGB nas bordas da imagem
