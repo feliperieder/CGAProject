@@ -98,13 +98,13 @@ Materiais Metálicos e Dielétricos
 
 Foram utilizados materiais com diferentes propriedades físicas para demonstrar o fluxo Metallic Workflow.
 
-##Material Metálico
-*Metallic = 1
-*Alto Smoothness
-*Reflexões intensas do ambiente
-#Material Dielétrico
-*Metallic = 0
-*Reflexões menos intensas
-*Comportamento semelhante a materiais reais como plástico, madeira e vidro
+## Material Metálico
+* Metallic = 1
+* Alto Smoothness
+* Reflexões intensas do ambiente
+# Material Dielétrico
+* Metallic = 0
+* Reflexões menos intensas
+* Comportamento semelhante a materiais reais como plástico, madeira e vidro
 
 
